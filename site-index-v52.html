@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Elsewedy Electric — European Partner Network</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles-v44.css">
+</head>
+<body>
+
+<div class="bg-fx"></div>
+<div class="bg-grid"></div>
+<canvas id="bg-particles"></canvas>
+
+<header>
+  <div class="nav">
+    <a class="logo" href="https://elsewedyelectric.com/region?id=4" target="_blank" rel="noopener noreferrer" aria-label="Visit Elsewedy Electric — Europe region page (opens in a new tab)">
+      <img class="brand-mark" src="elsewedy-logo.png" alt="Elsewedy Electric">
+    </a>
+  </div>
+</header>
+
+<section class="hero">
+  <h1>Powering a connected <span>European network</span></h1>
+  <p>Explore the strategic, technology and distribution partnerships Elsewedy Electric has built across Europe — click any highlighted country on the map, or a country card below, to meet its partners.</p>
+
+  <div class="stats-row" id="stats-row"></div>
+</section>
+
+<section class="coverage-section" id="presence">
+  <div class="section-head">
+    <h2>Our Presence in Europe</h2>
+    <p>28 export markets where Elsewedy Electric already delivers cable, electrical product, turnkey EPC and renewable energy solutions — built from real won-opportunity data. Filter by what we provide, or click a country for the full breakdown.</p>
+  </div>
+  <div class="filters" id="coverage-filters"></div>
+  <div class="coverage-grid" id="coverage-grid"></div>
+</section>
+
+<section class="map-section" id="map">
+  <div class="map-panel">
+    <svg id="map-svg" viewBox="0 0 980 720" preserveAspectRatio="xMidYMid meet"></svg>
+    <div class="map-explore-card">
+      <div class="mec-text">
+        <div class="mec-title">Explore Partners</div>
+        <div class="mec-sub">Click a country to see our partners</div>
+      </div>
+      <div class="mec-icon">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4 2.5L19.5 9.2L12.6 11.4L10.4 19.5L4 2.5Z" fill="#FFFFFF"/>
+        </svg>
+      </div>
+    </div>
+    <div class="map-legend">
+      <div class="item"><span class="swatch p"></span> Country with active partner(s)</div>
+      <div class="item"><span class="swatch n"></span> No partner presence yet</div>
+    </div>
+  </div>
+</section>
+
+<section class="country-partners-section" id="country-partners">
+  <div class="cp-empty" id="cp-empty">
+    Click a highlighted country on the map above (or a product chip in <b>Our Presence in Europe</b>) to see the partners active there.
+  </div>
+  <div class="cp-panel" id="cp-panel">
+    <div class="cp-head" id="cp-head"></div>
+    <div class="cp-grid" id="cp-grid"></div>
+  </div>
+</section>
+
+<footer>
+  Concept prototype for internal review · <b>Elsewedy Electric</b> Marketing Department · "Our Presence in Europe" reflects real won-opportunity data · Partner names, tiers and product tags are sourced directly from that data · Partner logos are pulled live and may occasionally be unavailable
+</footer>
+
+<div id="tooltip"></div>
+
+<script src="country-paths-v2.js"></script>
+<script src="country-data.js"></script>
+<script src="partner-details.js"></script>
+<script src="partner-logos-v10.js"></script>
+<script src="app-v38.js"></script>
+<script src="bg-particles-v17.js"></script>
+</body>
+</html>
